@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+    --primary-color: #184750;
+    --secondary-color: #e9e3e3;
+}
+
+body {
+    /* Custom fonts */
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    /* background-color: #dbf9fc; */
+}
+
+/* thematic break */
+hr {
+    margin: 1.5rem 0rem;
+}
+
+/* Containers */
+.container {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.container-center {
+    margin: auto;
+    max-width: 600px;
+}
+
+/* navigation */
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    /* border-bottom-left-radius: 1rem; */
+    padding: 0.2rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* overriding */
+.navigation .link {
+    color: white;
+    padding: 0rem 0.5rem;
+}
+
+.nav-right {
+    text-align: right;
+}
+
+.link-active {
+    font-weight: bold;
+}
+
+/* Header */
+.header {
+    padding: 1rem;
+    
+}
+
+/* Header text */
+.hero-text{
+    font-size: 1rem;
+}
+.header-text-highlight {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+/* Image */
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* white-space: normal; */
+}
+
+.img-round-profile {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 2.3px solid var(--primary-color);
+}
+
+/* Links */
+.link {
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    border: 2.3px solid var(--primary-color);
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.link-secondary {
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    border: 2.3px solid var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-secondary {
+    color: var(--primary-color);
+    background-color: white;
+}
+
+/* list */
+.list-non-bullets {
+    list-style: none;
+}
+
+.list-item-inline {
+    /* property of list tags */
+    display: inline;
+    padding: 0rem 0.4rem;
+}
+
+.list-item-inline .items-border {
+    padding: 0.5rem 0.5rem;
+    border: 2.3px solid var(--primary-color);
+}
+
+/* section */
+.section {
+    padding: 2rem;
+}
+
+.section-heading{
+    text-align: center;
+}
+
+.section-highlighted{
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: #184750;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.link-footer {
+    padding: 0.3rem;
+}
+
+.link-color {
+    color: white;
+}
+
+.footer-white-text {
+    color: white;
+}
+
+/* Skills */
+.img-skills {
+    height: 50px;
+    width: 50px;
+}
+
+/* Socials */
+.img-socials {
+    height: 25px;
+    width: 25px;
+}

@@ -2,11 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Jana</title>
+    <title>Rahul Jana - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            margin: 1rem 0 0;
+            font-size: 1.2rem;
+        }
+        .section {
+            margin-bottom: 3rem;
+        }
+        .section h2 {
+            font-size: 2rem;
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1e3a8a;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hi there 👋.</h1>
+    <header>
+        <div class="text-center">
+            <img src="profile.jpg" alt="Rahul Jana" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+            <h1>Rahul Jana</h1>
+            <p>Software Engineer | Cloud & Machine Learning Enthusiast</p>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <div class="section text-center">
+            <h2>About Me</h2>
+            <p>I am a passionate software engineer with expertise in cloud computing, machine learning, and full-stack development. I love building innovative solutions that make a difference. With a strong foundation in problem-solving and a keen eye for detail, I thrive in dynamic environments where I can contribute to impactful projects.</p>
+            <p>Over the years, I have honed my skills in designing scalable systems, optimizing machine learning pipelines, and collaborating with cross-functional teams to deliver high-quality solutions. My goal is to leverage technology to solve real-world problems and drive innovation.</p>
+        </div>
+        <div class="section">
+            <h2>Experience</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card p-3 mb-4">
+                        <h5>Software Engineer</h5>
+                        <p><em>iHub-AWaDH, IIT-Ropar and CSIR-CSIO</em></p>
+                        <p><strong>January 2024 - Present</strong></p>
+                        <p>Leading the Cloud and Machine Learning team, developing AWS-based solutions, and improving ML models. Spearheaded the deployment of a scalable cloud infrastructure that reduced operational costs by 20%.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-3 mb-4">
+                        <h5>Project Associate</h5>
+                        <p><em>iHub-AWaDH, IIT-Ropar and CSIR-CSIO</em></p>
+                        <p><strong>April 2023 - January 2024</strong></p>
+                        <p>Improved ML pipelines and contributed to AI-based interior design projects. Collaborated with a team of researchers to develop a predictive analytics tool that enhanced project efficiency by 15%.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-3 mb-4">
+                        <h5>Machine Learning Intern</h5>
+                        <p><em>Springworks</em></p>
+                        <p><strong>September 2021 - July 2022</strong></p>
+                        <p>Developed document parsing and crypto trading optimization solutions. Designed and implemented a machine learning model that increased trading accuracy by 25%.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-3 mb-4">
+                        <h5>Freelance Developer</h5>
+                        <p><em>Self-Employed</em></p>
+                        <p><strong>July 2022 - March 2023</strong></p>
+                        <p>Worked on various freelance projects, including building responsive websites and developing custom software solutions for small businesses. Delivered projects on time with a 100% client satisfaction rate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-3 mb-4">
+                        <h5>Programming</h5>
+                        <p>Python, TensorFlow, OpenCV</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 mb-4">
+                        <h5>DevOps</h5>
+                        <p>Bash, Linux, Docker</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 mb-4">
+                        <h5>Cloud</h5>
+                        <p>SageMaker, DynamoDB, MongoDB, MySQL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section text-center">
+            <h2>Download My Resume</h2>
+            <a href="Rahul_s_Resume_2025.pdf" class="btn btn-primary" download>Download Resume</a>
+        </div>
+        <div class="section text-center">
+            <h2>View My Resume</h2>
+            <a href="Rahul_s_Resume_2025.pdf" class="btn btn-secondary" target="_blank">View Resume</a>
+        </div>
+        <div class="section">
+            <h2>Connect with Me</h2>
+            <p>You can find me on the following platforms:</p>
+            <ul>
+                <li><a href="https://github.com/RahulJana" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Explore More</h2>
+            <p>Check out my <a href="github.html">GitHub Repositories</a> and <a href="achievements.html">Achievements</a> for more details.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Rahul Jana. All rights reserved.</p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

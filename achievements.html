@@ -3,20 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achievements</title>
+    <meta name="description" content="Rahul Jana - Achievements, awards, and recognition in AI/ML and software engineering.">
+    <title>Achievements - Rahul Jana | AI/ML Engineer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background: #f8f9fa;
+            color: #2c3e50;
+        }
+        nav {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white !important;
+            transition: opacity 0.3s;
+            font-weight: 500;
+        }
+        nav a:hover {
+            opacity: 0.8;
+        }
+        nav .navbar-brand {
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        .container {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        .achievement-item {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .achievement-item:hover {
+            transform: translateX(8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+        }
+        .achievement-item.award {
+            border-left-color: #f59e0b;
+        }
+        .achievement-item.github {
+            border-left-color: #3b82f6;
+        }
+        .achievement-item.innovation {
+            border-left-color: #10b981;
+        }
+        .achievement-item.recognition {
+            border-left-color: #8b5cf6;
+        }
+        .achievement-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .achievement-item.award .achievement-icon {
+            color: #f59e0b;
+        }
+        .achievement-item.github .achievement-icon {
+            color: #3b82f6;
+        }
+        .achievement-item.innovation .achievement-icon {
+            color: #10b981;
+        }
+        .achievement-item.recognition .achievement-icon {
+            color: #8b5cf6;
+        }
+        .achievement-item h3 {
+            color: #1e3a8a;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        .achievement-item p {
+            color: #475569;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .achievement-item .date {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: block;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            border-radius: 2px;
+        }
+        footer {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        footer a:hover {
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .achievement-item {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Achievements</h1>
-        <ul class="list-group mt-4">
-            <li class="list-group-item">Pull Shark x3</li>
-            <li class="list-group-item">Quickdraw</li>
-            <li class="list-group-item">YOLO</li>
-            <li class="list-group-item">Represented Animal Health Monitor and Bee Watcher at TIPS3.0, IIT-Kanpur.</li>
-            <li class="list-group-item">Developed a Voice-Controlled Switch Box selected for APJ Abdul Kalam Innovation Conclave.</li>
-            <li class="list-group-item">Intern of the Month (May 2022) at Springworks.</li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-code"></i> Rahul Jana</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="github.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="achievements.html">Achievements</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>🏆 Achievements & Recognition</h1>
+        <p>Recognition and milestones throughout my journey in AI/ML and Software Engineering</p>
     </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- GitHub Achievements -->
+        <h2 class="section-title">GitHub Recognition</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="achievement-item github">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Pull Shark <span style="color: #94a3b8; font-size: 0.8em;">×3</span></h3>
+                    <p>Published significant pull requests to open-source projects. Consistent contributor to the GitHub community.</p>
+                    <span class="date"><i class="fas fa-star"></i> GitHub Badge Achievement</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="achievement-item github">
+                    <div class="achievement-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Quickdraw</h3>
+                    <p>Quick turnaround on issue resolution and PR reviews. Demonstrated responsiveness and dedication to code quality.</p>
+                    <span class="date"><i class="fas fa-star"></i> GitHub Badge Achievement</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="achievement-item github">
+                    <div class="achievement-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>YOLO</h3>
+                    <p>Started a project that became significant in the community. Launched innovative ideas with conviction.</p>
+                    <span class="date"><i class="fas fa-star"></i> GitHub Badge Achievement</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Innovation & Projects -->
+        <h2 class="section-title" style="margin-top: 3rem;">Innovation Projects</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="achievement-item innovation">
+                    <div class="achievement-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Animal Health Monitor</h3>
+                    <p>Represented innovative AI-based health monitoring system at TIPS 3.0, IIT-Kanpur. Showcased cutting-edge IoT and ML integration for animal wellness tracking.</p>
+                    <span class="date"><i class="fas fa-calendar"></i> IIT-Kanpur Technology Innovation</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="achievement-item innovation">
+                    <div class="achievement-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Bee Watcher System</h3>
+                    <p>Advanced AI monitoring system for bee colony health. Demonstrated at TIPS 3.0 to promote sustainable agriculture through intelligent automation.</p>
+                    <span class="date"><i class="fas fa-calendar"></i> IIT-Kanpur Technology Innovation</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="achievement-item innovation">
+                    <div class="achievement-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Voice-Controlled Switch Box</h3>
+                    <p>Developed intelligent home automation device using voice recognition. Selected for prestigious <strong>APJ Abdul Kalam Innovation Conclave</strong> - national-level recognition for innovation.</p>
+                    <span class="date"><i class="fas fa-award"></i> APJ Abdul Kalam Innovation Conclave Selection</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Recognition -->
+        <h2 class="section-title" style="margin-top: 3rem;">Professional Recognition</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="achievement-item recognition">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Intern of the Month</h3>
+                    <p><strong>Springworks</strong> - May 2022</p>
+                    <p>Recognized for exceptional performance, innovative contributions to ML projects, and outstanding collaboration with the team. Awarded among all interns for outstanding achievement.</p>
+                    <span class="date"><i class="fas fa-calendar"></i> May 2022</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Metrics -->
+        <div style="margin-top: 3rem; background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);">
+            <h2 class="section-title">Impact Metrics</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <h3 style="font-size: 2.5rem; color: #2563eb; margin-bottom: 0.5rem;"><i class="fas fa-chart-line"></i> 25%</h3>
+                    <p style="color: #475569;">Trading Accuracy Improvement</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h3 style="font-size: 2.5rem; color: #10b981; margin-bottom: 0.5rem;"><i class="fas fa-cloud"></i> 20%</h3>
+                    <p style="color: #475569;">Operational Cost Reduction</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h3 style="font-size: 2.5rem; color: #f59e0b; margin-bottom: 0.5rem;"><i class="fas fa-tachometer-alt"></i> 15%</h3>
+                    <p style="color: #475569;">Project Efficiency Gain</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p style="margin-bottom: 1rem;"><strong>Rahul Jana</strong> | AI/ML Software Engineer</p>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="github.html">Projects</a>
+            <a href="https://github.com/RahulJana" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank">LinkedIn</a>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">&copy; 2025 Rahul Jana. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -3,537 +3,438 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rahul Jana - AI/ML Software Engineer. Cloud computing, machine learning, and full-stack development expertise. Based in India.">
-    <meta name="theme-color" content="#1e3a8a">
-    <title>Rahul Jana - AI/ML Software Engineer | Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
+    <meta name="description" content="Rahul Jana — Machine Learning Engineer building production ML and computer vision systems on AWS. 3+ years of MLOps, deep learning, and GenAI experience. Finalist in $1.4M global AI innovation challenge.">
+    <meta name="theme-color" content="#0a0e1a">
+    <meta name="keywords" content="Machine Learning Engineer, ML Engineer, MLOps, Computer Vision, Deep Learning, AWS, GenAI, LangChain, PyTorch, Rahul Jana, Portfolio">
+
+    <meta property="og:title" content="Rahul Jana — Machine Learning Engineer">
+    <meta property="og:description" content="ML Engineer with 3+ years building production ML systems on AWS. Finalist in $1.4M global AI innovation challenge.">
+    <meta property="og:image" content="https://rahul-portfolio.netlify.app/profile.jpg">
+    <meta property="og:type" content="website">
+
+    <title>Rahul Jana — Machine Learning Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Structured Data (JSON-LD) -->
+    <link rel="stylesheet" href="styles.css">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Rahul Jana",
-      "jobTitle": "Software Engineer",
+      "jobTitle": "Machine Learning Engineer",
+      "email": "i.rahuljana@gmail.com",
       "url": "https://rahul-portfolio.netlify.app",
       "sameAs": [
         "https://github.com/RahulJana",
         "https://www.linkedin.com/in/rahuljana-4/"
       ],
-      "image": "https://rahul-portfolio.netlify.app/profile.jpg"
+      "image": "https://rahul-portfolio.netlify.app/profile.jpg",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "TIF-AWADH, IIT Ropar"
+      }
     }
     </script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-            background: #f8f9fa;
-            color: #2c3e50;
-            line-height: 1.6;
-        }
-        /* Navigation */
-        nav {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav a {
-            color: white !important;
-            transition: opacity 0.3s;
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-        nav a:hover {
-            opacity: 0.8;
-        }
-        nav .navbar-brand {
-            font-weight: 700;
-            font-size: 1.3rem;
-        }
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
-            color: white;
-            padding: 5rem 2rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -10%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            border-radius: 50%;
-        }
-        header .content {
-            position: relative;
-            z-index: 1;
-        }
-        header img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            border: 4px solid rgba(255,255,255,0.3);
-            object-fit: cover;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-        header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-        header .tagline {
-            font-size: 1.3rem;
-            font-weight: 500;
-            margin-bottom: 1.5rem;
-            opacity: 0.95;
-        }
-        header .badge-group {
-            display: flex;
-            gap: 0.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 1rem;
-        }
-        header .badge {
-            background: rgba(255,255,255,0.2);
-            border: 1px solid rgba(255,255,255,0.4);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            backdrop-filter: blur(10px);
-        }
-        /* Sections */
-        .section {
-            margin-bottom: 4rem;
-            padding: 2rem 0;
-        }
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #1e3a8a;
-            margin-bottom: 2rem;
-            position: relative;
-            padding-bottom: 1rem;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, #2563eb, #7c3aed);
-            border-radius: 2px;
-        }
-        .about-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #475569;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        /* Cards */
-        .card {
-            border: none;
-            border-radius: 16px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            overflow: hidden;
-            background: white;
-            height: 100%;
-        }
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-        }
-        .card.experience {
-            border-left: 4px solid #2563eb;
-            padding: 1.8rem;
-        }
-        .card.experience h5 {
-            color: #1e3a8a;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
-        .card.experience em {
-            color: #7c3aed;
-            font-style: normal;
-            font-weight: 600;
-            display: block;
-            margin-bottom: 0.3rem;
-        }
-        .card.experience .dates {
-            color: #94a3b8;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
-        .card.experience p {
-            color: #475569;
-            margin: 0;
-            line-height: 1.6;
-        }
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.5rem;
-        }
-        .skill-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-            transition: all 0.3s;
-            border-top: 4px solid;
-        }
-        .skill-card.programming {
-            border-top-color: #3b82f6;
-        }
-        .skill-card.devops {
-            border-top-color: #ef4444;
-        }
-        .skill-card.cloud {
-            border-top-color: #f59e0b;
-        }
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        .skill-card h5 {
-            color: #1e3a8a;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-        .skill-card p {
-            color: #475569;
-            font-size: 0.95rem;
-            margin: 0;
-        }
-        /* CTA Buttons */
-        .btn-primary-gradient {
-            background: linear-gradient(135deg, #2563eb, #1e40af);
-            border: none;
-            padding: 0.75rem 2rem;
-            font-weight: 600;
-            border-radius: 10px;
-            transition: all 0.3s;
-            color: white;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .btn-primary-gradient:hover {
-            background: linear-gradient(135deg, #1e40af, #1e3a8a);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
-            color: white;
-        }
-        .btn-secondary-outline {
-            background: transparent;
-            border: 2px solid #2563eb;
-            padding: 0.65rem 1.8rem;
-            font-weight: 600;
-            border-radius: 10px;
-            transition: all 0.3s;
-            color: #2563eb;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .btn-secondary-outline:hover {
-            background: #2563eb;
-            color: white;
-        }
-        .button-group {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-        /* Social Links */
-        .social-links {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 0.75rem 1.5rem;
-            border: 2px solid #e0e7ff;
-            border-radius: 10px;
-            transition: all 0.3s;
-        }
-        .social-links a:hover {
-            background: #eff6ff;
-            border-color: #2563eb;
-            color: #1e40af;
-        }
-        .social-links a i {
-            font-size: 1.2rem;
-        }
-        /* Footer */
-        footer {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
-            color: white;
-            padding: 3rem 2rem;
-            margin-top: 4rem;
-        }
-        footer .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-        footer h5 {
-            color: #e0e7ff;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        footer a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.5rem;
-            transition: color 0.3s;
-        }
-        footer a:hover {
-            color: white;
-        }
-        footer .copyright {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            color: rgba(255, 255, 255, 0.7);
-        }
-        /* Responsive */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.2rem;
-            }
-            header .tagline {
-                font-size: 1.1rem;
-            }
-            .section-title {
-                font-size: 2rem;
-            }
-            .button-group {
-                flex-direction: column;
-            }
-            .button-group a {
-                width: 100%;
-                text-align: center;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home"><i class="fas fa-code"></i> Rahul Jana</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="nav">
+        <div class="container-page nav-inner">
+            <a class="nav-brand" href="#home">
+                <span class="brand-mark">RJ</span>
+                <span>Rahul Jana</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="c">
-        <!-- About Section -->
-        <div class="section" id="about">
-            <h2 class="section-title text-center">About Me</h2>
-            <div class="about-text">
-                <p>I'm an AI/ML Software Engineer with a passion for building intelligent systems and scalable cloud infrastructure. Currently leading the Cloud and Machine Learning initiatives at iHub-AWaDH (IIT-Ropar & CSIR-CSIO), where I architect AWS-based solutions and optimize ML pipelines for real-world impact.</p>
-                
-                <p style="margin-top: 1rem;">My expertise spans:</p>
-                <ul style="margin-top: 0.5rem; margin-left: 2rem; color: #475569;">
-                    <li><strong>Machine Learning:</strong> Deep learning, NLP, Computer Vision, Model Optimization</li>
-                    <li><strong>Cloud Engineering:</strong> AWS (SageMaker, Lambda, EC2, DynamoDB), Infrastructure-as-Code</li>
-                    <li><strong>Full-Stack Development:</strong> Python, Backend APIs, Database Design, DevOps</li>
-                </ul>
-
-                <p style="margin-top: 1rem;">I'm driven by solving complex problems through intelligent automation and delivering measurable business value. I thrive in collaborative environments where innovation meets practical implementation.</p>
-            </div
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
-                </ul>
-            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="github.html">Projects</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header id="home">
-        <div class="content">
-            <img src="profile.jpg" alt="Rahul Jana" loading="lazy">
-            <h1>Rahul Jana</h1>
-            <p class="tagline">AI/ML Software Engineer | Cloud Architecture | Full-Stack Development</p>
-            <div class="badge-group">
-                <span class="badge">🤖 Machine Learning</span>
-         !-- Experience Section -->
-        <div class="section" id="experience">
-            <h2 class="section-title">Experience</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card experience">
-                        <h5><i class="fas fa-briefcase" style="color: #2563eb; margin-right: 0.5rem;"></i>Software Engineer</h5>
-                        <em>iHub-AWaDH, IIT-Ropar & CSIR-CSIO</em>
-                        <span class="dates"><i class="far fa-calendar"></i> January 2024 - Present</span>
-                        <p>Leading Cloud & ML team developing AWS-based solutions. <strong>Key achievement:</strong> Spearheaded deployment of scalable cloud infrastructure reducing operational costs by <strong>20%</strong>. Architected ML pipelines for production workloads with TensorFlow & PyTorch.</p>
+    <!-- Hero -->
+    <header class="hero" id="home">
+        <div class="hero-grid-bg"></div>
+        <div class="container-page">
+            <div class="hero-inner">
+                <div>
+                    <span class="hero-eyebrow">
+                        <span class="pulse-dot"></span>
+                        Open to ML Engineer roles
+                    </span>
+                    <h1 class="hero-title">
+                        Building <span class="gradient-text">production ML</span><br>that ships and scales.
+                    </h1>
+                    <p class="hero-subtitle">
+                        I'm <strong>Rahul Jana</strong> — a Machine Learning Engineer with 3+ years designing end-to-end ML and computer vision systems on AWS. I architect MLOps pipelines, ship deep-learning models to production, and contribute to open-source research with published work.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="Rahul_Jana_Resume.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-ghost-light">
+                            <i class="fas fa-paper-plane"></i> Get in Touch
+                        </a>
+                    </div>
+                    <div class="hero-meta">
+                        <span><i class="fas fa-location-dot"></i> Chandigarh, India</span>
+                        <span><i class="fas fa-envelope"></i> i.rahuljana@gmail.com</span>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card experience">
-                        <h5><i class="fas fa-flask" style="color: #7c3aed; margin-right: 0.5rem;"></i>Project Associate</h5>
-                        <em>iHub-AWaDH, IIT-Ropar & CSIR-CSIO</em>
-                        <span class="dates"><i class="far fa-calendar"></i> April 2023 - January 2024</span>
-                        <p>Optimized ML pipelines for AI-based interior design projects. Developed predictive analytics tool enhancing project efficiency by <strong>15%</strong>. Collaborated with research team on data pipeline optimization using Python & AWS.</p>
-                    </div>
+                <div class="hero-photo-wrap">
+                    <img src="profile.jpg" alt="Rahul Jana" class="hero-photo" loading="eager">
                 </div>
-                <div class="col-md-6">
-                    <div class="card experience">
-                        <h5><i class="fas fa-robot" style="color: #2563eb; margin-right: 0.5rem;"></i>ML Intern</h5>
-                        <em>Springworks</em>
-                        <span class="dates"><i class="far fa-calendar"></i> September 2021 - July 2022</span>
-                        <p>Developed document parsing & crypto trading optimization solutions. Built ML model increasing trading accuracy by <strong>25%</strong>. Awarded "Intern of the Month" (May 2022). Tech: Python, OpenCV, TensorFlow.</p>
-                    </div>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-value"><span data-counter="3" data-suffix="+">3+</span></div>
+                    <div class="stat-label">Years building production ML</div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card experience">
-                        <h5><i class="fas fa-laptop-code" style="color: #f59e0b; margin-right: 0.5rem;"></i>Freelance Developer</h5>
-                        <em>Self-Employed</em>
-                        <span class="dates"><i class="far fa-calendar"></i> July 2022 - March 2023</span>
-                        <p>Built responsive web applications and custom software for SMBs. Delivered <strong>100% on-time</strong> with perfect client satisfaction. Tech: Full-stack, databases, deployment optimization
-                        <p><em>Springworks</em></p>
-                        <p><strong>September 2021 - July 2022</strong></p>
-                        <p>Developed document parsing and crypto trading optimization solutions. Designed and implemented a machine learning model that increased trading accuracy by 25%.</p>
-                    </div>
+                <div class="stat-card">
+                    <div class="stat-value"><span data-counter="98" data-suffix="%">98%</span></div>
+                    <div class="stat-label">MLOps pipeline uptime</div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card p-3 mb-4">
-                        <h5>Freelance Developer</h5>
-                        <p><em>Self-Employed</em></p>
-                        <p><strong>July 2022 - March 2023</strong></p>
-                        <p>Worked on various freelance projects, including building responsive websites and developing custom software solutions for small businesses. Delivered projects on time with a 100% client satisfaction rate.</p>
+                <div class="stat-card">
+                    <div class="stat-value">$1.4M</div>
+                    <div class="stat-label">AI challenge finalist</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value"><span data-counter="2" data-suffix="">2</span></div>
+                    <div class="stat-label">arXiv publications</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-page">
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="section-head reveal">
+                <span class="section-eyebrow">About</span>
+                <h2 class="section-title">ML Engineer with a bias for shipping.</h2>
+                <p class="section-subtitle">I work where research meets production — translating models into reliable services that real users depend on.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>I currently lead ML engineering work at <strong>TIF-AWADH, IIT Ropar</strong>, where I design AWS-based deployment pipelines and optimize computer vision models — including <strong>YOLO</strong> and <strong>U-Net</strong> — for production workloads serving farmers and researchers across India.</p>
+                    <p>Recently, I was a <span class="accent">finalist in the $1.4M Standard Industries Chemical Innovation Challenge</span> with Deep Forest Sciences, contributing backend work for <strong>DeepRetro</strong>, an LLM-driven retrosynthetic pathway tool published on arXiv.</p>
+                    <p>I'm fluent across the stack — from training models in PyTorch and TensorFlow, to packaging them with Docker, deploying via SageMaker, and orchestrating CI/CD with GitHub Actions. I care about uptime, latency, and reproducibility as much as accuracy.</p>
+                </div>
+                <div class="about-highlights reveal">
+                    <div class="about-highlight">
+                        <div class="icon"><i class="fas fa-cube"></i></div>
+                        <h4>Deep Learning</h4>
+                        <p>Computer Vision, NLP, Generative AI</p>
+                    </div>
+                    <div class="about-highlight">
+                        <div class="icon"><i class="fas fa-cloud"></i></div>
+                        <h4>MLOps on AWS</h4>
+                        <p>SageMaker, Docker, CI/CD</p>
+                    </div>
+                    <div class="about-highlight">
+                        <div class="icon"><i class="fas fa-network-wired"></i></div>
+                        <h4>RAG &amp; Agents</h4>
+                        <p>LangChain, FAISS, OpenAI</p>
+                    </div>
+                    <div class="about-highlight">
+                        <div class="icon"><i class="fas fa-flask"></i></div>
+                        <h4>Research</h4>
+                        <p>Published on arXiv ×2</p>
                     </div>
                 </div>
             </div>
-        <!-- Skills Section -->
-        <div class="section" id="skills">
-            <h2 class="section-title">Core Competencies</h2>
+        </section>
+
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="section-head reveal">
+                <span class="section-eyebrow">Experience</span>
+                <h2 class="section-title">Where I've shipped.</h2>
+                <p class="section-subtitle">Production ML across cloud, computer vision, and applied research.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <span class="timeline-marker"></span>
+                    <article class="card timeline-card">
+                        <div class="role-row">
+                            <h3 class="role">Software Engineer · ML</h3>
+                            <span class="dates">Apr 2023 — Present</span>
+                        </div>
+                        <div class="org">
+                            <span class="org-name"><i class="fas fa-building"></i> TIF-AWADH, IIT Ropar</span>
+                            <span class="org-loc">Chandigarh, India</span>
+                        </div>
+                        <ul class="bullet-list">
+                            <li>Designed and operate AWS-based ML deployment pipelines with <span class="metric">98% uptime</span> using Docker, SageMaker, and CI/CD workflows.</li>
+                            <li>Built an accelerometer-based cattle activity detection model achieving <span class="metric">93% accuracy</span> — <strong>published on arXiv</strong>.</li>
+                            <li>Built an AI-driven pest surveillance system over Kisan Call Center (KCC) queries that delivers an average <span class="metric">2-week lead time</span> on outbreak detection for government and farmers.</li>
+                            <li>Developed a computer vision pipeline for predicting cattle body attributes and weight, helping dairy researchers track growth.</li>
+                            <li>Built a U-Net + VGG16 segmentation and style-transfer system for automated interior design.</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <span class="timeline-marker"></span>
+                    <article class="card timeline-card">
+                        <div class="role-row">
+                            <h3 class="role">Machine Learning Intern</h3>
+                            <span class="dates">Sep 2021 — Jul 2022</span>
+                        </div>
+                        <div class="org">
+                            <span class="org-name"><i class="fas fa-building"></i> Springworks</span>
+                            <span class="org-loc">Remote</span>
+                        </div>
+                        <ul class="bullet-list">
+                            <li>Engineered ML models for document quality detection across government IDs (Aadhar, PAN, Passport), achieving <span class="metric">95% accuracy</span> with FPR under <strong>5%</strong>.</li>
+                            <li>Improved runtime of a crypto trading algorithm by <span class="metric">~20%</span> validated under live trading conditions.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="section-head reveal">
+                <span class="section-eyebrow">Toolkit</span>
+                <h2 class="section-title">Tech I work with daily.</h2>
+                <p class="section-subtitle">From training to deployment to monitoring — across Python, AWS, and modern GenAI tooling.</p>
+            </div>
+
             <div class="skills-grid">
-                <div class="skill-card programming">
-                    <h5><i class="fas fa-snake"></i> Machine Learning</h5>
-                    <p>TensorFlow • PyTorch • Scikit-learn • XGBoost • OpenCV • NLP • Deep Learning</p>
-                </div>
-                <div class="skill-card cloud">
-                    <h5><i class="fas fa-cloud"></i> Cloud & Databases</h5>
-                    <p>AWS SageMaker • Lambda • DynamoDB • MongoDB • MySQL • RDS • S3</p>
-                </div>
-                <div class="skill-card devops">
-                    <h5><i class="fas fa-cogs"></i> DevOps & Backend</h5>
-                    <p>Docker • Bash • Linux • Python • APIs • CI/CD • Git • Infrastructure</pp>SageMaker, DynamoDB, MongoDB, MySQL</p>
+                <article class="card skill-card reveal">
+                    <div class="skill-head">
+                        <span class="skill-icon"><i class="fas fa-brain"></i></span>
+                        <div>
+                            <h3>ML &amp; Deep Learning</h3>
+                            <p class="skill-sub">Modeling, GenAI, RAG</p>
+                        </div>
                     </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">PyTorch</span>
+                        <span class="skill-pill">TensorFlow</span>
+                        <span class="skill-pill">GenAI</span>
+                        <span class="skill-pill">LangChain</span>
+                        <span class="skill-pill">FastAPI</span>
+                        <span class="skill-pill">SageMaker</span>
+                        <span class="skill-pill">YOLO</span>
+                        <span class="skill-pill">U-Net</span>
+                    </div>
+                </article>
+
+                <article class="card skill-card reveal">
+                    <div class="skill-head">
+                        <span class="skill-icon violet"><i class="fas fa-cloud"></i></span>
+                        <div>
+                            <h3>Cloud &amp; MLOps</h3>
+                            <p class="skill-sub">Deploy, observe, scale</p>
+                        </div>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill">AWS</span>
+                        <span class="skill-pill">Docker</span>
+                        <span class="skill-pill">MLflow</span>
+                        <span class="skill-pill">GitHub Actions</span>
+                        <span class="skill-pill">CI/CD</span>
+                        <span class="skill-pill">Linux</span>
+                        <span class="skill-pill">Bash</span>
+                    </div>
+                </article>
+
+                <article class="card skill-card reveal">
+                    <div class="skill-head">
+                        <span class="skill-icon amber"><i class="fas fa-database"></i></span>
+                        <div>
+                            <h3>Data &amp; Backend</h3>
+                            <p class="skill-sub">Stores, APIs, retrieval</p>
+                        </div>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill">PostgreSQL</span>
+                        <span class="skill-pill">MongoDB</span>
+                        <span class="skill-pill">FAISS</span>
+                        <span class="skill-pill">REST APIs</span>
+                        <span class="skill-pill">OpenAI Embeddings</span>
+                        <span class="skill-pill">GPT-3.5/4</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Featured Projects preview -->
+        <section class="section" id="projects-preview">
+            <div class="section-head reveal">
+                <span class="section-eyebrow">Selected work</span>
+                <h2 class="section-title">Open-source &amp; side projects.</h2>
+                <p class="section-subtitle">A taste of the work I do outside the day job — full list on the projects page.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="card project-card featured reveal">
+                    <span class="featured-tag">Featured</span>
+                    <div class="project-head">
+                        <span class="project-icon"><i class="fas fa-flask-vial"></i></span>
+                        <div>
+                            <h3 class="project-title">DeepRetro</h3>
+                            <p class="project-tagline">Retrosynthesis with iterative LLM reasoning</p>
+                        </div>
+                    </div>
+                    <p class="project-body">Backend contributor for Deep Forest Sciences' retrosynthetic pathway discovery tool. <strong>Finalist in the $1.4M Standard Industries Chemical Innovation Challenge</strong>; work published on arXiv.</p>
+                    <div class="project-tech">
+                        <span class="skill-pill">LLMs</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">FastAPI</span>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn-link primary" href="https://github.com/deep-forest-sciences/deep-retro" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a class="btn-link" href="https://arxiv.org/" target="_blank" rel="noopener">
+                            <i class="fas fa-file-lines"></i> arXiv
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <div class="project-head">
+                        <span class="project-icon violet"><i class="fas fa-microphone-lines"></i></span>
+                        <div>
+                            <h3 class="project-title">Voice-enabled RAG Chatbot</h3>
+                            <p class="project-tagline">Hinglish-aware retrieval &amp; async serving</p>
+                        </div>
+                    </div>
+                    <p class="project-body">Production-grade RAG pipeline using FAISS + OpenAI embeddings + GPT-3.5. Fully async query execution, Hinglish transcription normalization, and graceful DB degradation under failure.</p>
+                    <div class="project-tech">
+                        <span class="skill-pill">FAISS</span>
+                        <span class="skill-pill">LangChain</span>
+                        <span class="skill-pill">FastAPI</span>
+                        <span class="skill-pill">OpenAI</span>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <div class="project-head">
+                        <span class="project-icon emerald"><i class="fas fa-globe"></i></span>
+                        <div>
+                            <h3 class="project-title">Habitable Exoplanet Classifier</h3>
+                            <p class="project-tagline">ML on NASA Kepler mission data</p>
+                        </div>
+                    </div>
+                    <p class="project-body">Built classification pipelines (Random Forest, SVM, Neural Networks) on Kepler astronomical data with comprehensive feature engineering.</p>
+                    <div class="project-tech">
+                        <span class="skill-pill">scikit-learn</span>
+                        <span class="skill-pill">TensorFlow</span>
+                        <span class="skill-pill">Pandas</span>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn-link" href="https://github.com/RahulJana/Habitable-Exoplanet-Classification" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div style="text-align:center; margin-top: 2.5rem;" class="reveal">
+                <a href="github.html" class="btn btn-outline-dark">
+                    <i class="fas fa-arrow-right"></i> See all projects
+                </a>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section" id="education">
+            <div class="section-head reveal">
+                <span class="section-eyebrow">Education</span>
+                <h2 class="section-title">Foundations.</h2>
+            </div>
+            <article class="card edu-card reveal">
+                <span class="edu-icon"><i class="fas fa-graduation-cap"></i></span>
+                <div class="edu-info">
+                    <h3>Chandigarh University</h3>
+                    <p>Punjab, India</p>
+                    <p class="degree">Selected for the <strong>APJ Abdul Kalam Innovation Conclave</strong> with a Voice-Controlled Switch Box (Socially Relevant Projects).</p>
+                </div>
+                <span class="cgpa-badge">CGPA 7.35 / 10</span>
+            </article>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact" style="padding-top: 2rem;">
+            <div class="cta-banner">
+                <span class="hero-eyebrow"><span class="pulse-dot"></span> Available for new opportunities</span>
+                <h2 style="margin-top: 1rem;">Let's build something useful.</h2>
+                <p>Looking for an ML engineer who ships, owns the pipeline end-to-end, and cares about uptime as much as accuracy? Let's talk.</p>
+                <div class="btns">
+                    <a href="mailto:i.rahuljana@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> i.rahuljana@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank" rel="noopener" class="btn btn-ghost-light">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/RahulJana" target="_blank" rel="noopener" class="btn btn-ghost-light">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="section text-center">
-            <h2>Download My Resume</h2>
-            <a href="Rahul_s_Resume_2025.pdf" class="btn btn-primary" download>Download Resume</a>
-        </div>
-        <!-- Resume & CTA Section -->
-        <div class="section text-center" id="resume">
-            <h2 class="section-title">Get My Resume</h2>
-            <p style="margin-bottom: 2rem; color: #475569;">Download my professional resume to learn more about my expertise in AI/ML and cloud architecture.</p>
-            <div class="button-group">
-                <a href="Rahul_s_Resume_2025.pdf" class="btn-primary-gradient" download>
-                    <i class="fas fa-download"></i> Download Resume
-                </a>
-                <a href="Rahul_s_Resume_2025.pdf" class="btn-secondary-outline" target="_blank">
-                    <i class="fas fa-eye"></i> View Resume
-                </a>
-            </div>
-        </div>
-
-        <!-- Projects CTA -->
-        <div class="section text-center" id="projects">
-            <h2 class="section-title">Featured Work</h2>
-            <p style="margin-bottom: 2rem; color: #475569;">Explore my AI/ML projects and open-source contributions.</p>
-            <div class="button-group">
-                <a href="github.html" class="btn-primary-gradient">
-                    <i class="fab fa-github"></i> View Projects
-                </a>
-                <a href="achievements.html" class="btn-secondary-outline">
-                    <i class="fas fa-trophy"></i> Achievements
-                </a>
-            </div>
-        </div>
-
-        <!-- Connect Section -->
-        <div class="section text-center">
-            <h2 class="section-title">Let's Connect</h2>
-            <p style="margin-bottom: 2rem; color: #475569;">Interested in collaborating or discussing opportunities? Reach out!</p>
-            <div class="social-links">
-                <a href="https://github.com/RahulJana" target="_blank" rel="noopener">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank" rel="noopener">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="mailto:rahul.jana@example.com">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div>
-                <h5>About</h5>
-                <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">AI/ML Software Engineer focused on building intelligent systems and scalable cloud solutions.</p>
+    <footer class="footer">
+        <div class="container-page">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="nav-brand" href="#home" style="color: var(--text-light-primary);">
+                        <span class="brand-mark">RJ</span>
+                        <span>Rahul Jana</span>
+                    </a>
+                    <p>Machine Learning Engineer building production ML and computer vision systems on AWS.</p>
+                </div>
+                <div>
+                    <h4>Navigate</h4>
+                    <ul class="footer-list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="github.html">Projects</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul class="footer-list">
+                        <li><a href="mailto:i.rahuljana@gmail.com">i.rahuljana@gmail.com</a></li>
+                        <li><a href="https://github.com/RahulJana" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="Rahul_Jana_Resume.pdf" download>Download Resume</a></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h5>Quick Links</h5>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="github.html">Projects</a>
-                <a href="achievements.html">Achievements</a>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> Rahul Jana. Built with care.</span>
+                <div class="footer-socials">
+                    <a href="https://github.com/RahulJana" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:i.rahuljana@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
-            <div>
-                <h5>Connect</h5>
-                <a href="https://github.com/RahulJana" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank">LinkedIn</a>
-                <a href="mailto:rahul.jana@example.com">Email</a>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025 Rahul Jana. All rights reserved. | Deployed on Netlify</p>
         </div>
     </footer>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

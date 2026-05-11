@@ -3,326 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rahul Jana - Featured GitHub projects and open-source contributions in AI/ML and software engineering.">
-    <title>Projects - Rahul Jana | AI/ML Engineer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Projects by Rahul Jana — Machine Learning Engineer. Open-source ML, retrosynthesis with LLMs, RAG pipelines, computer vision, and applied research.">
+    <meta name="theme-color" content="#0a0e1a">
+    <title>Projects — Rahul Jana | ML Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-            background: #f8f9fa;
-            color: #2c3e50;
-        }
-        nav {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav a {
-            color: white !important;
-            transition: opacity 0.3s;
-            font-weight: 500;
-        }
-        nav a:hover {
-            opacity: 0.8;
-        }
-        nav .navbar-brand {
-            font-weight: 700;
-            font-size: 1.3rem;
-        }
-        .header {
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        .header h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        .header p {
-            font-size: 1.2rem;
-            opacity: 0.95;
-        }
-        .container {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
-        .section-title {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #1e3a8a;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            padding-bottom: 1rem;
-            position: relative;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, #2563eb, #7c3aed);
-            border-radius: 2px;
-        }
-        .section-title:first-of-type {
-            margin-top: 0;
-        }
-        .project-card {
-            background: white;
-            border-radius: 16px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border: 2px solid #e2e8f0;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            flex-direction: column;
-        }
-        .project-card:hover {
-            border-color: #2563eb;
-            box-shadow: 0 12px 28px rgba(37, 99, 235, 0.15);
-            transform: translateY(-5px);
-        }
-        .project-header {
-            display: flex;
-            align-items: start;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-        .project-icon {
-            font-size: 2.5rem;
-            color: #2563eb;
-            flex-shrink: 0;
-            width: 50px;
-            text-align: center;
-        }
-        .project-card h3 {
-            color: #1e3a8a;
-            font-weight: 700;
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
-        .project-card p {
-            color: #475569;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-            margin-top: 1rem;
-        }
-        .tech-badge {
-            background: #eff6ff;
-            color: #2563eb;
-            padding: 0.4rem 0.9rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            border: 1px solid #dbeafe;
-        }
-        .project-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: auto;
-            padding-top: 1rem;
-            border-top: 1px solid #e2e8f0;
-        }
-        .project-links a {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 0.6rem 1.2rem;
-            border-radius: 8px;
-            background: #f0f9ff;
-            transition: all 0.3s;
-        }
-        .project-links a:hover {
-            background: #2563eb;
-            color: white;
-        }
-        .impact-badge {
-            background: linear-gradient(135deg, #10b98129, #059669);
-            color: #065f46;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-top: 1rem;
-        }
-        footer {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            margin-top: 3rem;
-        }
-        footer a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        footer a:hover {
-            color: white;
-        }
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-            .project-card {
-                padding: 1.5rem;
-            }
-            .project-links {
-                flex-direction: column;
-            }
-            .project-links a {
-                text-align: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><i class="fas fa-code"></i> Rahul Jana</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="nav">
+        <div class="container-page nav-inner">
+            <a class="nav-brand" href="index.html">
+                <span class="brand-mark">RJ</span>
+                <span>Rahul Jana</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="github.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
-                </ul>
-            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="github.html" class="active">Projects</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Header -->
-    <div class="header">
-        <h1>💻 Featured Projects</h1>
-        <p>AI/ML applications, data science, and innovative software solutions</p>
-    </div>
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container-page">
+            <h1>Projects &amp; <span class="gradient-text">Open Source</span></h1>
+            <p>Production ML, applied research, and side projects — what I build when I'm not in stand-up.</p>
+        </div>
+    </header>
 
-    <!-- Projects -->
-    <div class="container">
-        <h2 class="section-title">Machine Learning & AI</h2>
-        
-        <!-- Project 1 -->
-        <div class="project-card">
-            <div class="project-header">
-                <div class="project-icon"><i class="fas fa-star"></i></div>
-                <div>
-                    <h3>Habitable Exoplanet Classification</h3>
-                    <p>Advanced machine learning system for classifying potentially habitable exoplanets using Kepler Space Telescope data.</p>
+    <main class="container-page">
+        <!-- Featured: from resume -->
+        <section class="section">
+            <div class="section-head reveal">
+                <span class="section-eyebrow">Featured Work</span>
+                <h2 class="section-title">Recent &amp; published.</h2>
+                <p class="section-subtitle">Open-source contributions and projects highlighted on my resume.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="card project-card featured reveal">
+                    <span class="featured-tag">Featured</span>
+                    <div class="project-head">
+                        <span class="project-icon"><i class="fas fa-flask-vial"></i></span>
+                        <div>
+                            <h3 class="project-title">DeepRetro</h3>
+                            <p class="project-tagline">Retrosynthetic pathway discovery with iterative LLM reasoning</p>
+                        </div>
+                    </div>
+                    <p class="project-body">Backend contributor for <strong>Deep Forest Sciences'</strong> retrosynthesis tool that uses iterative LLM reasoning to propose chemical pathways. Project was a <strong>finalist in the Standard Industries Chemical Innovation Challenge</strong> for AI-Assisted Molecular Synthesis — $1.4M prize pool. Published on arXiv.</p>
+                    <div class="project-tech">
+                        <span class="skill-pill">LLMs</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">FastAPI</span>
+                        <span class="skill-pill">Cheminformatics</span>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn-link primary" href="https://github.com/deep-forest-sciences/deep-retro" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a class="btn-link" href="https://arxiv.org/" target="_blank" rel="noopener">
+                            <i class="fas fa-file-lines"></i> arXiv
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card project-card featured reveal">
+                    <span class="featured-tag">Featured</span>
+                    <div class="project-head">
+                        <span class="project-icon violet"><i class="fas fa-microphone-lines"></i></span>
+                        <div>
+                            <h3 class="project-title">Voice-enabled RAG Chatbot</h3>
+                            <p class="project-tagline">Hinglish-aware retrieval, fully async, fault-tolerant</p>
+                        </div>
+                    </div>
+                    <p class="project-body">Production-grade RAG pipeline using <strong>FAISS</strong> with OpenAI embeddings and <strong>GPT-3.5-turbo</strong>. Implemented fully async query execution to eliminate event-loop blocking under concurrent requests, Hinglish-aware transcription normalization for accurate semantic retrieval across Hindi/English/Hinglish, and graceful database degradation to maintain availability during DB failures.</p>
+                    <div class="project-tech">
+                        <span class="skill-pill">FAISS</span>
+                        <span class="skill-pill">LangChain</span>
+                        <span class="skill-pill">FastAPI</span>
+                        <span class="skill-pill">OpenAI</span>
+                        <span class="skill-pill">Async Python</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Other ML projects -->
+        <section class="section" style="padding-top: 1.5rem;">
+            <div class="section-head reveal">
+                <span class="section-eyebrow">More on GitHub</span>
+                <h2 class="section-title">Other work &amp; experiments.</h2>
+                <p class="section-subtitle">Older repos and learning projects from the past few years.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="card project-card reveal">
+                    <div class="project-head">
+                        <span class="project-icon emerald"><i class="fas fa-globe"></i></span>
+                        <div>
+                            <h3 class="project-title">Habitable Exoplanet Classifier</h3>
+                            <p class="project-tagline">ML on NASA Kepler mission data</p>
+                        </div>
+                    </div>
+                    <p class="project-body">Classification system for potentially habitable exoplanets using NASA's Kepler dataset. Implemented Random Forest, SVM, and Neural Network classifiers with feature engineering on astronomical data.</p>
+                    <div class="project-tech">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">scikit-learn</span>
+                        <span class="skill-pill">TensorFlow</span>
+                        <span class="skill-pill">Pandas</span>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn-link" href="https://github.com/RahulJana/Habitable-Exoplanet-Classification" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <div class="project-head">
+                        <span class="project-icon amber"><i class="fas fa-music"></i></span>
+                        <div>
+                            <h3 class="project-title">Music Recommendation System</h3>
+                            <p class="project-tagline">Collaborative + content-based hybrid</p>
+                        </div>
+                    </div>
+                    <p class="project-body">Hybrid recommendation engine combining collaborative filtering with content-based methods. Used matrix factorization techniques and evaluated with precision/recall metrics.</p>
+                    <div class="project-tech">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">scikit-learn</span>
+                        <span class="skill-pill">Matrix Factorization</span>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn-link" href="https://github.com/RahulJana/Music_Recommendation_System" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <div class="project-head">
+                        <span class="project-icon"><i class="fas fa-book-open"></i></span>
+                        <div>
+                            <h3 class="project-title">Python ML Notebooks</h3>
+                            <p class="project-tagline">Foundations &amp; experiments</p>
+                        </div>
+                    </div>
+                    <p class="project-body">Forked study repository covering supervised/unsupervised learning, model evaluation, and deep learning fundamentals — based on Sebastian Raschka's <em>Python Machine Learning</em> book.</p>
+                    <div class="project-tech">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">Jupyter</span>
+                        <span class="skill-pill">ML Foundations</span>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn-link" href="https://github.com/RahulJana/python-machine-learning-book" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cta-banner reveal">
+                <h2>More on my GitHub</h2>
+                <p>Profile, repositories, and contributions — including in-flight work.</p>
+                <div class="btns">
+                    <a href="https://github.com/RahulJana" target="_blank" rel="noopener" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Visit GitHub Profile
+                    </a>
+                    <a href="achievements.html" class="btn btn-ghost-light">
+                        <i class="fas fa-trophy"></i> See Achievements
+                    </a>
                 </div>
             </div>
-            <p><strong>Description:</strong> Leveraged NASA's Kepler mission dataset to build a predictive model identifying exoplanets capable of hosting life. Implemented multiple classification algorithms (Random Forest, SVM, Neural Networks) and performed comprehensive feature engineering on astronomical data.</p>
-            <div class="tech-stack">
-                <span class="tech-badge">Python</span>
-                <span class="tech-badge">TensorFlow</span>
-                <span class="tech-badge">Scikit-learn</span>
-                <span class="tech-badge">Pandas</span>
-                <span class="tech-badge">Data Analysis</span>
-            </div>
-            <span class="impact-badge"><i class="fas fa-lightbulb"></i> Space Science & ML Research</span>
-            <div class="project-links">
-                <a href="https://github.com/RahulJana/Habitable-Exoplanet-Classification" target="_blank">
-                    <i class="fab fa-github"></i> View Repository
-                </a>
-            </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-            <div class="project-header">
-                <div class="project-icon"><i class="fas fa-music"></i></div>
-                <div>
-                    <h3>Music Recommendation System</h3>
-                    <p>Intelligent recommendation engine for music discovery using collaborative filtering and content-based approaches.</p>
-                </div>
-            </div>
-            <p><strong>Description:</strong> Built a hybrid recommendation system combining collaborative filtering and content-based methods to suggest personalized music. Implemented matrix factorization techniques and evaluated using precision/recall metrics.</p>
-            <div class="tech-stack">
-                <span class="tech-badge">Python</span>
-                <span class="tech-badge">Scikit-learn</span>
-                <span class="tech-badge">Collaborative Filtering</span>
-                <span class="tech-badge">Machine Learning</span>
-            </div>
-            <div class="project-links">
-                <a href="https://github.com/RahulJana/Music_Recommendation_System" target="_blank">
-                    <i class="fab fa-github"></i> View Repository
-                </a>
-            </div>
-        </div>
-
-        <h2 class="section-title">Learning & Open Source</h2>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-            <div class="project-header">
-                <div class="project-icon"><i class="fas fa-book"></i></div>
-                <div>
-                    <h3>Python Machine Learning Book</h3>
-                    <p>Forked repository of the comprehensive Python Machine Learning guide by Sebastian Raschka.</p>
-                </div>
-            </div>
-            <p><strong>Description:</strong> Active learning repository for mastering machine learning concepts and practical implementations. Contains notebooks covering supervised learning, unsupervised learning, model evaluation, and deep learning fundamentals.</p>
-            <div class="tech-stack">
-                <span class="tech-badge">Python</span>
-                <span class="tech-badge">Jupyter Notebooks</span>
-                <span class="tech-badge">ML Fundamentals</span>
-                <span class="tech-badge">Educational</span>
-            </div>
-            <div class="project-links">
-                <a href="https://github.com/RahulJana/python-machine-learning-book" target="_blank">
-                    <i class="fab fa-github"></i> View Repository
-                </a>
-            </div>
-        </div>
-
-        <!-- Call to Action -->
-        <div style="margin-top: 3rem; padding: 3rem 2rem; background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%); border-radius: 16px; border: 2px solid #dbeafe; text-align: center;">
-            <h3 style="color: #1e3a8a; margin-bottom: 1rem;">More Projects on GitHub</h3>
-            <p style="color: #475569; margin-bottom: 1.5rem;">Check out my full GitHub profile for additional projects, contributions, and repositories.</p>
-            <a href="https://github.com/RahulJana" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #2563eb, #1e40af); color: white; padding: 0.8rem 2rem; border-radius: 10px; text-decoration: none; font-weight: 600; transition: all 0.3s;">
-                <i class="fab fa-github"></i> Visit GitHub Profile
-            </a>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <p style="margin-bottom: 1rem;"><strong>Rahul Jana</strong> | AI/ML Software Engineer</p>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="achievements.html">Achievements</a>
-            <a href="https://github.com/RahulJana" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank">LinkedIn</a>
+    <footer class="footer">
+        <div class="container-page">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="nav-brand" href="index.html" style="color: var(--text-light-primary);">
+                        <span class="brand-mark">RJ</span>
+                        <span>Rahul Jana</span>
+                    </a>
+                    <p>Machine Learning Engineer building production ML and computer vision systems on AWS.</p>
+                </div>
+                <div>
+                    <h4>Navigate</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#experience">Experience</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                        <li><a href="github.html">Projects</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul class="footer-list">
+                        <li><a href="mailto:i.rahuljana@gmail.com">i.rahuljana@gmail.com</a></li>
+                        <li><a href="https://github.com/RahulJana" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="Rahul_Jana_Resume.pdf" download>Download Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> Rahul Jana. Built with care.</span>
+                <div class="footer-socials">
+                    <a href="https://github.com/RahulJana" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:i.rahuljana@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
         </div>
-        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">&copy; 2025 Rahul Jana. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

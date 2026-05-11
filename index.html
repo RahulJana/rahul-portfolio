@@ -3,158 +3,438 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Jana - Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(135deg, #1e3a8a, #2563eb);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-            position: relative;
-        }
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        header p {
-            margin: 1rem 0 0;
-            font-size: 1.2rem;
-        }
-        .section {
-            margin-bottom: 3rem;
-        }
-        .section h2 {
-            font-size: 2rem;
-            color: #2563eb;
-            margin-bottom: 1rem;
-        }
-        .card {
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: #1e3a8a;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+    <meta name="description" content="Rahul Jana — Machine Learning Engineer building production ML and computer vision systems on AWS. 3+ years of MLOps, deep learning, and GenAI experience. Finalist in $1.4M global AI innovation challenge.">
+    <meta name="theme-color" content="#0a0e1a">
+    <meta name="keywords" content="Machine Learning Engineer, ML Engineer, MLOps, Computer Vision, Deep Learning, AWS, GenAI, LangChain, PyTorch, Rahul Jana, Portfolio">
+
+    <meta property="og:title" content="Rahul Jana — Machine Learning Engineer">
+    <meta property="og:description" content="ML Engineer with 3+ years building production ML systems on AWS. Finalist in $1.4M global AI innovation challenge.">
+    <meta property="og:image" content="https://rahul-portfolio.netlify.app/profile.jpg">
+    <meta property="og:type" content="website">
+
+    <title>Rahul Jana — Machine Learning Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rahul Jana",
+      "jobTitle": "Machine Learning Engineer",
+      "email": "i.rahuljana@gmail.com",
+      "url": "https://rahul-portfolio.netlify.app",
+      "sameAs": [
+        "https://github.com/RahulJana",
+        "https://www.linkedin.com/in/rahuljana-4/"
+      ],
+      "image": "https://rahul-portfolio.netlify.app/profile.jpg",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "TIF-AWADH, IIT Ropar"
+      }
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <div class="text-center">
-            <img src="profile.jpg" alt="Rahul Jana" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
-            <h1>Rahul Jana</h1>
-            <p>Software Engineer | Cloud & Machine Learning Enthusiast</p>
-        </div>
-    </header>
-    <div class="container mt-5">
-        <div class="section text-center">
-            <h2>About Me</h2>
-            <p>I am a passionate software engineer with expertise in cloud computing, machine learning, and full-stack development. I love building innovative solutions that make a difference. With a strong foundation in problem-solving and a keen eye for detail, I thrive in dynamic environments where I can contribute to impactful projects.</p>
-            <p>Over the years, I have honed my skills in designing scalable systems, optimizing machine learning pipelines, and collaborating with cross-functional teams to deliver high-quality solutions. My goal is to leverage technology to solve real-world problems and drive innovation.</p>
-        </div>
-        <div class="section">
-            <h2>Experience</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card p-3 mb-4">
-                        <h5>Software Engineer</h5>
-                        <p><em>iHub-AWaDH, IIT-Ropar and CSIR-CSIO</em></p>
-                        <p><strong>January 2024 - Present</strong></p>
-                        <p>Leading the Cloud and Machine Learning team, developing AWS-based solutions, and improving ML models. Spearheaded the deployment of a scalable cloud infrastructure that reduced operational costs by 20%.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card p-3 mb-4">
-                        <h5>Project Associate</h5>
-                        <p><em>iHub-AWaDH, IIT-Ropar and CSIR-CSIO</em></p>
-                        <p><strong>April 2023 - January 2024</strong></p>
-                        <p>Improved ML pipelines and contributed to AI-based interior design projects. Collaborated with a team of researchers to develop a predictive analytics tool that enhanced project efficiency by 15%.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card p-3 mb-4">
-                        <h5>Machine Learning Intern</h5>
-                        <p><em>Springworks</em></p>
-                        <p><strong>September 2021 - July 2022</strong></p>
-                        <p>Developed document parsing and crypto trading optimization solutions. Designed and implemented a machine learning model that increased trading accuracy by 25%.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card p-3 mb-4">
-                        <h5>Freelance Developer</h5>
-                        <p><em>Self-Employed</em></p>
-                        <p><strong>July 2022 - March 2023</strong></p>
-                        <p>Worked on various freelance projects, including building responsive websites and developing custom software solutions for small businesses. Delivered projects on time with a 100% client satisfaction rate.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <h2>Skills</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card p-3 mb-4">
-                        <h5>Programming</h5>
-                        <p>Python, TensorFlow, OpenCV</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-3 mb-4">
-                        <h5>DevOps</h5>
-                        <p>Bash, Linux, Docker</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-3 mb-4">
-                        <h5>Cloud</h5>
-                        <p>SageMaker, DynamoDB, MongoDB, MySQL</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section text-center">
-            <h2>Download My Resume</h2>
-            <a href="Rahul_s_Resume_2025.pdf" class="btn btn-primary" download>Download Resume</a>
-        </div>
-        <div class="section text-center">
-            <h2>View My Resume</h2>
-            <a href="Rahul_s_Resume_2025.pdf" class="btn btn-secondary" target="_blank">View Resume</a>
-        </div>
-        <div class="section">
-            <h2>Connect with Me</h2>
-            <p>You can find me on the following platforms:</p>
-            <ul>
-                <li><a href="https://github.com/RahulJana" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank">LinkedIn</a></li>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container-page nav-inner">
+            <a class="nav-brand" href="#home">
+                <span class="brand-mark">RJ</span>
+                <span>Rahul Jana</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="github.html">Projects</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="section">
-            <h2>Explore More</h2>
-            <p>Check out my <a href="github.html">GitHub Repositories</a> and <a href="achievements.html">Achievements</a> for more details.</p>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="home">
+        <div class="hero-grid-bg"></div>
+        <div class="container-page">
+            <div class="hero-inner">
+                <div>
+                    <span class="hero-eyebrow">
+                        <span class="pulse-dot"></span>
+                        Open to ML Engineer roles
+                    </span>
+                    <h1 class="hero-title">
+                        Building <span class="gradient-text">production ML</span><br>that ships and scales.
+                    </h1>
+                    <p class="hero-subtitle">
+                        I'm <strong>Rahul Jana</strong> — a Machine Learning Engineer with 3+ years designing end-to-end ML and computer vision systems on AWS. I architect MLOps pipelines, ship deep-learning models to production, and contribute to open-source research with published work.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="Rahul_Jana_Resume.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-ghost-light">
+                            <i class="fas fa-paper-plane"></i> Get in Touch
+                        </a>
+                    </div>
+                    <div class="hero-meta">
+                        <span><i class="fas fa-location-dot"></i> Chandigarh, India</span>
+                        <span><i class="fas fa-envelope"></i> i.rahuljana@gmail.com</span>
+                    </div>
+                </div>
+                <div class="hero-photo-wrap">
+                    <img src="profile.jpg" alt="Rahul Jana" class="hero-photo" loading="eager">
+                </div>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-value"><span data-counter="3" data-suffix="+">3+</span></div>
+                    <div class="stat-label">Years building production ML</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value"><span data-counter="98" data-suffix="%">98%</span></div>
+                    <div class="stat-label">MLOps pipeline uptime</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">$1.4M</div>
+                    <div class="stat-label">AI challenge finalist</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value"><span data-counter="2" data-suffix="">2</span></div>
+                    <div class="stat-label">arXiv publications</div>
+                </div>
+            </div>
         </div>
-    </div>
-    <footer>
-        <p>&copy; 2025 Rahul Jana. All rights reserved.</p>
+    </header>
+
+    <main class="container-page">
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="section-head reveal">
+                <span class="section-eyebrow">About</span>
+                <h2 class="section-title">ML Engineer with a bias for shipping.</h2>
+                <p class="section-subtitle">I work where research meets production — translating models into reliable services that real users depend on.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>I currently lead ML engineering work at <strong>TIF-AWADH, IIT Ropar</strong>, where I design AWS-based deployment pipelines and optimize computer vision models — including <strong>YOLO</strong> and <strong>U-Net</strong> — for production workloads serving farmers and researchers across India.</p>
+                    <p>Recently, I was a <span class="accent">finalist in the $1.4M Standard Industries Chemical Innovation Challenge</span> with Deep Forest Sciences, contributing backend work for <strong>DeepRetro</strong>, an LLM-driven retrosynthetic pathway tool published on arXiv.</p>
+                    <p>I'm fluent across the stack — from training models in PyTorch and TensorFlow, to packaging them with Docker, deploying via SageMaker, and orchestrating CI/CD with GitHub Actions. I care about uptime, latency, and reproducibility as much as accuracy.</p>
+                </div>
+                <div class="about-highlights reveal">
+                    <div class="about-highlight">
+                        <div class="icon"><i class="fas fa-cube"></i></div>
+                        <h4>Deep Learning</h4>
+                        <p>Computer Vision, NLP, Generative AI</p>
+                    </div>
+                    <div class="about-highlight">
+                        <div class="icon"><i class="fas fa-cloud"></i></div>
+                        <h4>MLOps on AWS</h4>
+                        <p>SageMaker, Docker, CI/CD</p>
+                    </div>
+                    <div class="about-highlight">
+                        <div class="icon"><i class="fas fa-network-wired"></i></div>
+                        <h4>RAG &amp; Agents</h4>
+                        <p>LangChain, FAISS, OpenAI</p>
+                    </div>
+                    <div class="about-highlight">
+                        <div class="icon"><i class="fas fa-flask"></i></div>
+                        <h4>Research</h4>
+                        <p>Published on arXiv ×2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="section-head reveal">
+                <span class="section-eyebrow">Experience</span>
+                <h2 class="section-title">Where I've shipped.</h2>
+                <p class="section-subtitle">Production ML across cloud, computer vision, and applied research.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <span class="timeline-marker"></span>
+                    <article class="card timeline-card">
+                        <div class="role-row">
+                            <h3 class="role">Software Engineer · ML</h3>
+                            <span class="dates">Apr 2023 — Present</span>
+                        </div>
+                        <div class="org">
+                            <span class="org-name"><i class="fas fa-building"></i> TIF-AWADH, IIT Ropar</span>
+                            <span class="org-loc">Chandigarh, India</span>
+                        </div>
+                        <ul class="bullet-list">
+                            <li>Designed and operate AWS-based ML deployment pipelines with <span class="metric">98% uptime</span> using Docker, SageMaker, and CI/CD workflows.</li>
+                            <li>Built an accelerometer-based cattle activity detection model achieving <span class="metric">93% accuracy</span> — <strong>published on arXiv</strong>.</li>
+                            <li>Built an AI-driven pest surveillance system over Kisan Call Center (KCC) queries that delivers an average <span class="metric">2-week lead time</span> on outbreak detection for government and farmers.</li>
+                            <li>Developed a computer vision pipeline for predicting cattle body attributes and weight, helping dairy researchers track growth.</li>
+                            <li>Built a U-Net + VGG16 segmentation and style-transfer system for automated interior design.</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <span class="timeline-marker"></span>
+                    <article class="card timeline-card">
+                        <div class="role-row">
+                            <h3 class="role">Machine Learning Intern</h3>
+                            <span class="dates">Sep 2021 — Jul 2022</span>
+                        </div>
+                        <div class="org">
+                            <span class="org-name"><i class="fas fa-building"></i> Springworks</span>
+                            <span class="org-loc">Remote</span>
+                        </div>
+                        <ul class="bullet-list">
+                            <li>Engineered ML models for document quality detection across government IDs (Aadhar, PAN, Passport), achieving <span class="metric">95% accuracy</span> with FPR under <strong>5%</strong>.</li>
+                            <li>Improved runtime of a crypto trading algorithm by <span class="metric">~20%</span> validated under live trading conditions.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="section-head reveal">
+                <span class="section-eyebrow">Toolkit</span>
+                <h2 class="section-title">Tech I work with daily.</h2>
+                <p class="section-subtitle">From training to deployment to monitoring — across Python, AWS, and modern GenAI tooling.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="card skill-card reveal">
+                    <div class="skill-head">
+                        <span class="skill-icon"><i class="fas fa-brain"></i></span>
+                        <div>
+                            <h3>ML &amp; Deep Learning</h3>
+                            <p class="skill-sub">Modeling, GenAI, RAG</p>
+                        </div>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">PyTorch</span>
+                        <span class="skill-pill">TensorFlow</span>
+                        <span class="skill-pill">GenAI</span>
+                        <span class="skill-pill">LangChain</span>
+                        <span class="skill-pill">FastAPI</span>
+                        <span class="skill-pill">SageMaker</span>
+                        <span class="skill-pill">YOLO</span>
+                        <span class="skill-pill">U-Net</span>
+                    </div>
+                </article>
+
+                <article class="card skill-card reveal">
+                    <div class="skill-head">
+                        <span class="skill-icon violet"><i class="fas fa-cloud"></i></span>
+                        <div>
+                            <h3>Cloud &amp; MLOps</h3>
+                            <p class="skill-sub">Deploy, observe, scale</p>
+                        </div>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill">AWS</span>
+                        <span class="skill-pill">Docker</span>
+                        <span class="skill-pill">MLflow</span>
+                        <span class="skill-pill">GitHub Actions</span>
+                        <span class="skill-pill">CI/CD</span>
+                        <span class="skill-pill">Linux</span>
+                        <span class="skill-pill">Bash</span>
+                    </div>
+                </article>
+
+                <article class="card skill-card reveal">
+                    <div class="skill-head">
+                        <span class="skill-icon amber"><i class="fas fa-database"></i></span>
+                        <div>
+                            <h3>Data &amp; Backend</h3>
+                            <p class="skill-sub">Stores, APIs, retrieval</p>
+                        </div>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill">PostgreSQL</span>
+                        <span class="skill-pill">MongoDB</span>
+                        <span class="skill-pill">FAISS</span>
+                        <span class="skill-pill">REST APIs</span>
+                        <span class="skill-pill">OpenAI Embeddings</span>
+                        <span class="skill-pill">GPT-3.5/4</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Featured Projects preview -->
+        <section class="section" id="projects-preview">
+            <div class="section-head reveal">
+                <span class="section-eyebrow">Selected work</span>
+                <h2 class="section-title">Open-source &amp; side projects.</h2>
+                <p class="section-subtitle">A taste of the work I do outside the day job — full list on the projects page.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="card project-card featured reveal">
+                    <span class="featured-tag">Featured</span>
+                    <div class="project-head">
+                        <span class="project-icon"><i class="fas fa-flask-vial"></i></span>
+                        <div>
+                            <h3 class="project-title">DeepRetro</h3>
+                            <p class="project-tagline">Retrosynthesis with iterative LLM reasoning</p>
+                        </div>
+                    </div>
+                    <p class="project-body">Backend contributor for Deep Forest Sciences' retrosynthetic pathway discovery tool. <strong>Finalist in the $1.4M Standard Industries Chemical Innovation Challenge</strong>; work published on arXiv.</p>
+                    <div class="project-tech">
+                        <span class="skill-pill">LLMs</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">FastAPI</span>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn-link primary" href="https://github.com/deep-forest-sciences/deep-retro" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a class="btn-link" href="https://arxiv.org/" target="_blank" rel="noopener">
+                            <i class="fas fa-file-lines"></i> arXiv
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <div class="project-head">
+                        <span class="project-icon violet"><i class="fas fa-microphone-lines"></i></span>
+                        <div>
+                            <h3 class="project-title">Voice-enabled RAG Chatbot</h3>
+                            <p class="project-tagline">Hinglish-aware retrieval &amp; async serving</p>
+                        </div>
+                    </div>
+                    <p class="project-body">Production-grade RAG pipeline using FAISS + OpenAI embeddings + GPT-3.5. Fully async query execution, Hinglish transcription normalization, and graceful DB degradation under failure.</p>
+                    <div class="project-tech">
+                        <span class="skill-pill">FAISS</span>
+                        <span class="skill-pill">LangChain</span>
+                        <span class="skill-pill">FastAPI</span>
+                        <span class="skill-pill">OpenAI</span>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal">
+                    <div class="project-head">
+                        <span class="project-icon emerald"><i class="fas fa-globe"></i></span>
+                        <div>
+                            <h3 class="project-title">Habitable Exoplanet Classifier</h3>
+                            <p class="project-tagline">ML on NASA Kepler mission data</p>
+                        </div>
+                    </div>
+                    <p class="project-body">Built classification pipelines (Random Forest, SVM, Neural Networks) on Kepler astronomical data with comprehensive feature engineering.</p>
+                    <div class="project-tech">
+                        <span class="skill-pill">scikit-learn</span>
+                        <span class="skill-pill">TensorFlow</span>
+                        <span class="skill-pill">Pandas</span>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn-link" href="https://github.com/RahulJana/Habitable-Exoplanet-Classification" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div style="text-align:center; margin-top: 2.5rem;" class="reveal">
+                <a href="github.html" class="btn btn-outline-dark">
+                    <i class="fas fa-arrow-right"></i> See all projects
+                </a>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section" id="education">
+            <div class="section-head reveal">
+                <span class="section-eyebrow">Education</span>
+                <h2 class="section-title">Foundations.</h2>
+            </div>
+            <article class="card edu-card reveal">
+                <span class="edu-icon"><i class="fas fa-graduation-cap"></i></span>
+                <div class="edu-info">
+                    <h3>Chandigarh University</h3>
+                    <p>Punjab, India</p>
+                    <p class="degree">Selected for the <strong>APJ Abdul Kalam Innovation Conclave</strong> with a Voice-Controlled Switch Box (Socially Relevant Projects).</p>
+                </div>
+                <span class="cgpa-badge">CGPA 7.35 / 10</span>
+            </article>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact" style="padding-top: 2rem;">
+            <div class="cta-banner">
+                <span class="hero-eyebrow"><span class="pulse-dot"></span> Available for new opportunities</span>
+                <h2 style="margin-top: 1rem;">Let's build something useful.</h2>
+                <p>Looking for an ML engineer who ships, owns the pipeline end-to-end, and cares about uptime as much as accuracy? Let's talk.</p>
+                <div class="btns">
+                    <a href="mailto:i.rahuljana@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> i.rahuljana@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank" rel="noopener" class="btn btn-ghost-light">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/RahulJana" target="_blank" rel="noopener" class="btn btn-ghost-light">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-page">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="nav-brand" href="#home" style="color: var(--text-light-primary);">
+                        <span class="brand-mark">RJ</span>
+                        <span>Rahul Jana</span>
+                    </a>
+                    <p>Machine Learning Engineer building production ML and computer vision systems on AWS.</p>
+                </div>
+                <div>
+                    <h4>Navigate</h4>
+                    <ul class="footer-list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="github.html">Projects</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul class="footer-list">
+                        <li><a href="mailto:i.rahuljana@gmail.com">i.rahuljana@gmail.com</a></li>
+                        <li><a href="https://github.com/RahulJana" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="Rahul_Jana_Resume.pdf" download>Download Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> Rahul Jana. Built with care.</span>
+                <div class="footer-socials">
+                    <a href="https://github.com/RahulJana" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rahuljana-4/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:i.rahuljana@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

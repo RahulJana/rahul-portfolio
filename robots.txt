@@ -1,0 +1,19 @@
+# https://rahul-portfolio.netlify.app/robots.txt
+User-agent: *
+Allow: /
+Disallow: /netlify.toml
+
+# AI crawlers — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://rahul-portfolio.netlify.app/sitemap.xml

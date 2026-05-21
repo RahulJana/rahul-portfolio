@@ -1,4 +1,4 @@
-# https://rahul-portfolio.netlify.app/robots.txt
+# https://rahuljana.netlify.app/robots.txt
 User-agent: *
 Allow: /
 Disallow: /netlify.toml
@@ -16,4 +16,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://rahul-portfolio.netlify.app/sitemap.xml
+Sitemap: https://rahuljana.netlify.app/sitemap.xml
